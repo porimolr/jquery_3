@@ -1,0 +1,153 @@
+#draggable {
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+    background-color: rgba(0, 157, 255, 0.588);
+}
+/* ex_2 */
+ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    margin-bottom: 10px;
+}
+li {
+    margin: 5px; 
+    padding: 5px;
+    width: 150px;
+}
+/* ex_3 */
+#gallery { float: left; width: 65%; min-height: 12em; }
+  .gallery.custom-state-active { background: #eee; }
+  .gallery li { float: left; width: 96px; padding: 0.4em; margin: 0 0.4em 0.4em 0; text-align: center; }
+  .gallery li h5 { margin: 0 0 0.4em; cursor: move; }
+  .gallery li a { float: right; }
+  .gallery li a.ui-icon-zoomin { float: left; }
+  .gallery li img { width: 100%; cursor: move; }
+ 
+  #trash { float: right; width: 32%; min-height: 18em; padding: 1%; }
+  #trash h4 { line-height: 16px; margin: 0 0 0.4em; }
+  #trash h4 .ui-icon { float: left; }
+  #trash .gallery h5 { display: none; }
+  /* ex_4 */
+  #container { width: 300px; height: 300px; }
+  #container h3 { text-align: center; margin: 0; margin-bottom: 10px; }
+  #resizable { background-position: top left; width: 150px; height: 150px; }
+  #resizable, #container { padding: 0.5em; }
+  /* ex_7 */
+  .custom-combobox {
+    position: relative;
+    display: inline-block;
+  }
+  .custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+  }
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  /* ex_8 */
+  #red, #green, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+  }
+  #swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+  }
+  #red .ui-slider-range { background: #ef2929; }
+  #red .ui-slider-handle { border-color: #ef2929; }
+  #green .ui-slider-range { background: #8ae234; }
+  #green .ui-slider-handle { border-color: #8ae234; }
+  #blue .ui-slider-range { background: #729fcf; }
+  #blue .ui-slider-handle { border-color: #729fcf; }
+  
+  /* ex_9 */
+  #eq > span {
+    height:120px; float:left; margin:15px
+  }
+  /* ex_10 */
+  .ui-button-icon-only.demo-splitbutton-select {
+    width: 1em;
+  }
+  /* ex_11 */
+  #zoom-button {
+    width: 55px;
+  }
+  #fontname-button,
+  #fontsize-button {
+    width: 45px;
+  }
+  #forecolor-button {
+    width: 50px;
+  }
+  #hilitecolor-button {
+    width: 70px;
+  }
+  #bold {
+    font-weight: bold;
+  }
+  #italic {
+    font-style: italic;
+  }
+  #underline {
+    text-decoration: underline;
+  }
+  .toolbar {
+    font-size: .75em;
+  }
+  #page {
+    width: 440px;
+    left: 50%;
+    position: relative;
+    margin-left: -226px;
+    height: 450px;
+    border: 1px solid #888;
+    box-shadow: 7px 7px 3px #ccc;
+    font-size: 11px;
+    font-family: "Lucida Grande";
+    zoom: 100%;
+    padding: 5px;
+    white-space: pre-line;
+    overflow: scroll;
+  }
+  .wrap {
+    width: 588px;
+  }
+  /* ex_13 */
+  .ui-progressbar {
+    position: relative;
+  }
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  /* ex_14 */
+  #progressbarr {
+    margin-top: 20px;
+  }
+ 
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
+ 
+  .ui-dialog-titlebar-close {
+    display: none;
+  }
+  /* ex_15 */
+  .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }

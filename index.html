@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- fonts link -->
+    <!-- css link -->
+     <link rel="stylesheet" href="jquery-ui-1.13.3.custom/jquery-ui.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/media.css">
+     <link rel="stylesheet" href="fontawesome/css/all.css">
+     <link rel="stylesheet" href="css/bootstrap-icons.css">
+</head>
+<body>
+  <!-- ex_1 -->
+  <div class="container text-center">
+    <h2 class="text-center">(1) Draggable</h2>
+    <div id="draggable" class="ui-widget-content">
+      <p>Drag me around</p>
+    </div>
+  </div>
+    <!-- ex_2 -->
+    <div class="container text-center">
+      <h2 class="text-center">(2) jQuery UI Draggable + Sortable</h2>
+      <ul>
+        <li id="ddraggable" class="ui-state-highlight">Drag me down</li>
+      </ul>
+       
+      <ul id="sortable">
+        <li class="ui-state-default">Item 1</li>
+        <li class="ui-state-default">Item 2</li>
+        <li class="ui-state-default">Item 3</li>
+        <li class="ui-state-default">Item 4</li>
+        <li class="ui-state-default">Item 5</li>
+      </ul>
+    </div>
+      <!-- ex_1 -->
+  <div class="container text-center">
+    <h2 class="text-center">(3) Droppable Simple photo manager</h2>
+    <div class="ui-widget ui-helper-clearfix">
+ 
+      <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+        <li class="ui-widget-content ui-corner-tr">
+          <h5 class="ui-widget-header">High Tatras</h5>
+          <img src="images/a.jpg" alt="The peaks of High Tatras" width="96" height="72">
+          <a href="images/high_tatras.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+          <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+        </li>
+        <li class="ui-widget-content ui-corner-tr">
+          <h5 class="ui-widget-header">High Tatras 2</h5>
+          <img src="images/b.jpg"The chalet at the Green mountain lake" width="96" height="72">
+          <a href="images/high_tatras2.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+          <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+        </li>
+        <li class="ui-widget-content ui-corner-tr">
+          <h5 class="ui-widget-header">High Tatras 3</h5>
+          <img src="images/c.jpg" alt="Planning the ascent" width="96" height="72">
+          <a href="images/high_tatras3.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+          <a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+        </li>
+        <li class="ui-widget-content ui-corner-tr">
+          <h5 class="ui-widget-header">High Tatras 4</h5>
+          <img src="images/d.jpg" alt="On top of Kozi kopka" width="96" height="72">
+          <a href="images/high_tatras4.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+          <a href="https://icons.getbootstrap.com/icons/trash/" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+        </li>
+      </ul>      
+      <div id="trash" class="ui-widget-content ui-state-default">
+        <h4 class="ui-widget-header"><span class="ui-icon ui-icon-trash">Trash</span> Trash</h4>
+      </div>       
+      </div>
+  </div>
+   <!-- ex_4 -->
+   <div class="container text-center">
+    <h2 class="text-center">(4) Resizable Constrain resize area</h2>
+    <div id="container" class="ui-widget-content">
+      <h3 class="ui-widget-header">Containment</h3>
+      <div id="resizable" class="ui-state-active">
+        <h3 class="ui-widget-header">Resizable</h3>
+      </div>
+    </div>  
+  </div>
+     <!-- ex_5 -->
+     <div class="container text-center">
+      <h2 class="text-center">(5) Accordion Collapse content</h2>
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+        </div>
+      </div>
+    </div>
+       <!-- ex_6 -->
+   <div class="container text-center">
+    <h2 class="text-center">(6) Autocomplete</h2>
+    <div class="ui-widget">
+      <label for="tags">Tags: </label>
+      <input id="tags">
+    </div>
+  </div>
+        <!-- ex_7 -->
+        <div class="container text-center">
+        <h2 class="text-center">(7) Autocomplete combobox</h2>
+        <div class="ui-widget">
+          <label>Your preferred programming language: </label>
+          <select id="combobox">
+            <option value="">Select one...</option>
+            <option value="ActionScript">ActionScript</option>
+            <option value="AppleScript">AppleScript</option>
+            <option value="Asp">Asp</option>
+            <option value="BASIC">BASIC</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Clojure">Clojure</option>
+            <option value="COBOL">COBOL</option>
+            <option value="ColdFusion">ColdFusion</option>
+            <option value="Erlang">Erlang</option>
+            <option value="Fortran">Fortran</option>
+            <option value="Groovy">Groovy</option>
+            <option value="Haskell">Haskell</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Lisp">Lisp</option>
+            <option value="Perl">Perl</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Scala">Scala</option>
+            <option value="Scheme">Scheme</option>
+          </select>
+        </div>
+        <button id="toggle">Show underlying select</button>
+         
+  </div>
+         <!-- ex_8 -->
+        <div class="container text-center">
+          <h2 class="text-center">(8) Slider Colorpicker</h2>
+          <div class="ui-widget-content" style="border:0;"></div>
+          <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+            <span class="ui-icon ui-icon-pencil" style="float:left; margin:-2px 5px 0 0;"></span>
+            Simple Colorpicker
+          </p>
+           
+          <div id="red"></div>
+          <div id="green"></div>
+          <div id="blue"></div>
+           
+          <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+
+           
+  </div>
+         <!-- ex_9 -->
+         <div class="container text-center">
+          <h2 class="text-center">(9) Slider multiple slider</h2>
+          <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+            <span class="ui-icon ui-icon-volume-on" style="float:left; margin:-2px 5px 0 0;"></span>
+            Master volume
+          </p>
+           
+          <div id="master" style="width:260px; margin:15px;"></div>
+           
+          <p class="ui-state-default ui-corner-all" style="padding:4px;margin-top:4em;">
+            <span class="ui-icon ui-icon-signal" style="float:left; margin:-2px 5px 0 0;"></span>
+            Graphic EQ
+          </p>
+           
+          <div id="eq">
+            <span>88</span>
+            <span>77</span>
+            <span>55</span>
+            <span>33</span>
+            <span>40</span>
+            <span>45</span>
+            <span>70</span>
+          </div>
+        </div>
+  <!-- ex_10 -->
+   <div class="container text-center">
+    <h2 class="text-center">(10) Controlgroup</h2>
+    <div class="widget">
+      <h1>Split button</h1>
+      <div class="controlgroup">
+        <button>Run last option</button>
+        <select>
+          <option>Open...</option>
+          <option>Save</option>
+          <option>Delete</option>
+        </select>
+      </div>
+      <br>
+      <h3>Output:</h3>
+      <ul class="output"></ul>
+    </div>
+  </div>
+  <!-- ex_11 -->
+   <div class="container text-center">
+    <h2 class="text-center">(11) Controlgroup Toolbar</h2>
+    <div class="wrap">
+      <div class="toolbar">
+          <button id="print">Print</button>
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+          <select id="zoom">
+            <option selected="" disabled="">Zoom</option>
+            <option>50%</option>
+            <option>75%</option>
+            <option>90%</option>
+            <option>100%</option>
+            <option>125%</option>
+            <option>150%</option>
+            <option>200%</option>
+          </select>
+          <select id="fontname">
+            <option selected="" disabled="">Font</option>
+            <option>Arial</option>
+            <option>Comic Sans MS</option>
+            <option>Courier New</option>
+            <option>Georgia</option>
+            <option>Impact</option>
+            <option>Lucida Grande</option>
+            <option>Times New Roman</option>
+            <option>Verdana</option>
+          </select>
+          <select id="fontsize">
+            <option selected="" disabled="">Size</option>
+            <option value="1">8px</option>
+            <option value="2">9px</option>
+            <option value="3">10px</option>
+            <option value="4">11px</option>
+            <option value="5">12px</option>
+            <option value="6">14px</option>
+            <option value="7">18px</option>
+            <option value="8">24px</option>
+            <option value="9">30px</option>
+            <option value="10">36px</option>
+          </select>
+          <select id="hilitecolor" title="Background color">
+            <option selected="" disabled="">Highlight</option>
+            <option value="white">None</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="grey">Grey</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+          </select>
+          <select id="forecolor" title="Color">
+            <option selected="" disabled="">Color</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="#ccc">Grey</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+          </select>
+          <button id="bold">B</button>
+          <button id="italic">I</button>
+          <button id="underline">U</button>
+     
+      </div>
+      <pre id="page" contenteditable="true">  The Rime of the Ancient Mariner (text of 1834)
+      BY SAMUEL TAYLOR COLERIDGE
+      Argument
+     
+      How a Ship having passed the Line was driven by storms to the cold Country towards the South Pole;
+      and how from thence she made her course to the tropical Latitude of the Great Pacific Ocean; and
+      of the strange things that befell; and in what manner the Ancyent Marinere came back to his own
+      Country.
+     
+      PART I
+      It is an ancient Mariner,
+      And he stoppeth one of three.
+      'By thy long grey beard and glittering eye,
+      Now wherefore stopp'st thou me?
+     
+      The Bridegroom's doors are opened wide,
+      And I am next of kin;
+      The guests are met, the feast is set:
+      May'st hear the merry din.'
+     
+      He holds him with his skinny hand,
+      'There was a ship,' quoth he.
+      'Hold off! unhand me, grey-beard loon!'
+      Eftsoons his hand dropt he.
+     
+      He holds him with his glittering eye—
+      The Wedding-Guest stood still,
+      And listens like a three years' child:
+      The Mariner hath his will.
+     
+      The Wedding-Guest sat on a stone:
+      He cannot choose but hear;
+      And thus spake on that ancient man,
+      The bright-eyed Mariner.
+     
+      'The ship was cheered, the harbour cleared,
+      Merrily did we drop
+      Below the kirk, below the hill,
+      Below the lighthouse top.
+     
+      The Sun came up upon the left,
+      Out of the sea came he!
+      And he shone bright, and on the right
+      Went down into the sea.
+     
+      Higher and higher every day,
+      Till over the mast at noon—'
+      The Wedding-Guest here beat his breast,
+      For he heard the loud bassoon.
+     
+      The bride hath paced into the hall,
+      Red as a rose is she;
+      Nodding their heads before her goes
+      The merry minstrelsy.
+     
+      The Wedding-Guest he beat his breast,
+      Yet he cannot choose but hear;
+      And thus spake on that ancient man,
+      The bright-eyed Mariner.
+     
+      And now the STORM-BLAST came, and he
+      Was tyrannous and strong:
+      He struck with his o'ertaking wings,
+      And chased us south along.
+     
+      With sloping masts and dipping prow,
+      As who pursued with yell and blow
+      Still treads the shadow of his foe,
+      And forward bends his head,
+      The ship drove fast, loud roared the blast,
+      And southward aye we fled.
+     
+      And now there came both mist and snow,
+      And it grew wondrous cold:
+      And ice, mast-high, came floating by,
+      As green as emerald.
+     
+      And through the drifts the snowy clifts
+      Did send a dismal sheen:
+      Nor shapes of men nor beasts we ken—
+      The ice was all between.
+     
+      The ice was here, the ice was there,
+      The ice was all around:
+      It cracked and growled, and roared and howled,
+      Like noises in a swound!
+     
+      At length did cross an Albatross,
+      Thorough the fog it came;
+      As if it had been a Christian soul,
+      We hailed it in God's name.
+     
+      It ate the food it ne'er had eat,
+      And round and round it flew.
+      The ice did split with a thunder-fit;
+      The helmsman steered us through!
+     
+      And a good south wind sprung up behind;
+      The Albatross did follow,
+      And every day, for food or play,
+      Came to the mariner's hollo!
+     
+      In mist or cloud, on mast or shroud,
+      It perched for vespers nine;
+      Whiles all the night, through fog-smoke white,
+      Glimmered the white Moon-shine.'
+     
+      'God save thee, ancient Mariner!
+      From the fiends, that plague thee thus!—
+      Why look'st thou so?'—With my cross-bow
+      I shot the ALBATROSS.
+      </pre>
+    </div>
+     
+  </div>
+  <!-- ex_12 -->
+   <div class="container text-center">
+    <h2 class="text-center">(12) Datepicker Animations</h2>
+    <p>Date: <input type="text" id="datepicker" size="30"></p>
+ 
+    <p>Animations:<br>
+      <select id="anim">
+        <option value="show">Show (default)</option>
+        <option value="slideDown">Slide down</option>
+        <option value="fadeIn">Fade in</option>
+        <option value="blind">Blind (UI Effect)</option>
+        <option value="bounce">Bounce (UI Effect)</option>
+        <option value="clip">Clip (UI Effect)</option>
+        <option value="drop">Drop (UI Effect)</option>
+        <option value="fold">Fold (UI Effect)</option>
+        <option value="slide">Slide (UI Effect)</option>
+        <option value="">None</option>
+      </select>
+    </p>
+  </div>
+  <!-- ex_13 -->
+   <div class="container text-center">
+    <h2 class="text-center">(13) Datepicker format date</h2>
+    <p>Date: <input type="text" id="datepickerr" size="30"></p>
+ 
+    <p>Format options:<br>
+      <select id="format">
+        <option value="mm/dd/yy">Default - mm/dd/yy</option>
+        <option value="yy-mm-dd">ISO 8601 - yy-mm-dd</option>
+        <option value="d M, y">Short - d M, y</option>
+        <option value="d MM, y">Medium - d MM, y</option>
+        <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+        <option value="'day' d 'of' MM 'in the year' yy">With text - 'day' d 'of' MM 'in the year' yy</option>
+      </select>
+    </p>
+  </div>
+  <!-- ex_14 -->
+   <div class="container text-center">
+    <h2 class="text-center">(14) Progressbar custom label</h2>
+    <div id="progressbar"><div class="progress-label">Loading...</div></div>
+ 
+    </div>
+      <!-- ex_15 -->
+   <div class="container text-center">
+    <h2 class="text-center">(15) Animation</h2>
+    <div class="toggler">
+      <div id="effect" class="ui-widget-content ui-corner-all">
+        <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+        <p>
+          Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+        </p>
+      </div>
+    </div>
+     
+    <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+     
+ 
+    </div>
+
+
+
+
+
+    
+
+
+<!-- js link -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
